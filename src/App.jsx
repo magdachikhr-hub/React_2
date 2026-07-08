@@ -2,12 +2,12 @@ import Card from "./components/Card";
 
 function App() {
   return (
-    <main className="h-screen bg-[#616161] w-full ">
-      <div>
+    <main className="h-screen bg-[#616161] flex items-center justify-center">
+      <div className="flex gap-24.5">
         <Card
           info={{
             name: "Simon James",
-            image: "/simon.jpg",
+            image: "/public/simon.jpg",
             profession:
               "Product Designer who focuses on simplicity & usability",
             followers: 312,
@@ -18,7 +18,7 @@ function App() {
         <Card
           info={{
             name: "Molly Blacksmith",
-            image: "/molly.jpg",
+            image: "/public/molly.jpg",
             profession:
               "the desperate insistence on loving and pursuing sorrow",
             followers: 210,
@@ -28,8 +28,8 @@ function App() {
         ></Card>
         <Card
           info={{
-            name: "John Smith",
-            image: "/john.jpg",
+            name: "Nick Richardson",
+            image: "/public/john.jpg",
             profession:
               "described the translation “like extreme Mallarmé, or a cut-up",
             followers: 500,
