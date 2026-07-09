@@ -1,18 +1,15 @@
-import { useState } from "react";
-
-function Card(props) {
-  const [profile, setprofile] = useState();
+function Card({ info }) {
   return (
     <>
       <div className="bg-[#313131] w-70 h-106 pt-7 pr-7 pb-6 pl-7 rounded-[40px]">
-        <img src={props.info.image} alt="" className="" />
+        <img src={info.image} alt="" className="" />
         <div>
           <span className="flex gap-5.25">
-            {props.info.name}
+            {info.name}
 
-            {props.info.verified && <img src="/public/verified.png" alt="" />}
+            {info.verified && <img src="/verified.png" alt="" />}
           </span>
-          <p>{props.info.profession}</p>
+          <p>{info.profession}</p>
         </div>
         <div className="flex">
           <span className="flex">
@@ -38,7 +35,7 @@ function Card(props) {
                 stroke-linejoin="round"
               />
             </svg>
-            {props.info.followers}
+            {info.followers}
           </span>
           <span className="flex">
             <svg
@@ -70,7 +67,7 @@ function Card(props) {
                 stroke-linejoin="round"
               />
             </svg>
-            {props.info.following}
+            {info.following}
           </span>
           <button className="flex">
             Follow

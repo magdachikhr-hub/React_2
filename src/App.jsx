@@ -7,7 +7,7 @@ function App() {
         <Card
           info={{
             name: "Simon James",
-            image: "/public/simon.jpg",
+            image: "/simon.jpg",
             profession:
               "Product Designer who focuses on simplicity & usability",
             followers: 312,
@@ -18,7 +18,7 @@ function App() {
         <Card
           info={{
             name: "Molly Blacksmith",
-            image: "/public/molly.jpg",
+            image: "/molly.jpg",
             profession:
               "the desperate insistence on loving and pursuing sorrow",
             followers: 210,
@@ -29,7 +29,7 @@ function App() {
         <Card
           info={{
             name: "Nick Richardson",
-            image: "/public/john.jpg",
+            image: "/john.jpg",
             profession:
               "described the translation “like extreme Mallarmé, or a cut-up",
             followers: 500,
